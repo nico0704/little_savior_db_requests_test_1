@@ -1,37 +1,3 @@
-/*class Recipe {
-  final int id;
-  final String title;
-  final String steps;
-  final int duration;
-
-  Recipe({required this.title, required this.steps, required this.duration});
-
-  factory Recipe.fromJson(dynamic json) {
-    return Recipe(
-      title: json['title'] as String,
-      steps: json['steps'] as String,
-      duration: json['duration'] as int,
-    );
-  }
-
-  static List<Recipe> recipesFromSnapshot(List snapshot) {
-    return snapshot.map((data) {
-      return Recipe.fromJson(data);
-    }).toList();
-  }
-
-  @override
-  String toString() {
-    return 'Recipe {title: $title, steps: $steps, duration: $duration}';
-  }
-}
-
-*/
-
-// To parse this JSON data, do
-//
-//     final recipe = recipeFromJson(jsonString);
-
 import 'dart:convert';
 
 List<Recipe> recipeFromJson(String str) =>
